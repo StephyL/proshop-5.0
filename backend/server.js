@@ -17,15 +17,15 @@ const app = express();
 
 //Body parser middleware
 app.use(express.json());
-// app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 
 // --Stephy
-app.use(express.urlencoded({ extended: false }));
-app.use(
-  cors({
-    origin: ["http://localhost:8000", "https://proshop.onrender.com"],
-  })
-);
+// app.use(express.urlencoded({ extended: false }));
+// app.use(
+//   cors({
+//     origin: ["http://localhost:8000", "https://proshop.onrender.com"],
+//   })
+// );
 // -- Stephy
 
 //Cookie parser middleware
